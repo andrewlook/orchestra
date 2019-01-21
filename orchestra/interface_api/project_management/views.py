@@ -50,7 +50,8 @@ def project_information_api(request):
     both of these permissions in the view below.
 
     """
-    project_id = load_encoded_json(request.body)['project_id']
+    project_json = load_encoded_json(request.body)
+    project_id = project_json['project_id']
     worker = get_object_or_404(Worker, user=request.user)
     if not (is_project_admin(request.user) or
             worker.assignments.filter(task__project=project_id).exists()):
