@@ -251,7 +251,7 @@ def assign_task(worker_id, task_id, staffing_request_inquiry=None):
 
     if settings.PRODUCTION or settings.STAGING:
         add_worker_to_project_team(worker, task.project)
-    notify_status_change(task, previous_status)
+    # notify_status_change(task, previous_status)
     mark_worker_as_winner(worker, task, required_role_counter,
                           staffing_request_inquiry)
     return task
