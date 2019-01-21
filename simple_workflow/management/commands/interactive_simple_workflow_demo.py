@@ -1,3 +1,4 @@
+# noinspection PyInterpreter
 import subprocess
 from pprint import pprint
 from time import sleep
@@ -85,7 +86,7 @@ create_orchestra_project(
     'A test run of our simple workflow',     # A description of the new project
     10,                                      # A priority level for the project
     {
-        'url': 'http://www.jrbotros.com/'    # Data required by the workflow:
+        'url': 'http://www.andrewlook.com/'    # Data required by the workflow:
     },
 )
         ''')
@@ -102,7 +103,7 @@ create_orchestra_project(
             'A test run of our simple workflow',
             10,
             {
-                'url': 'http://www.jrbotros.com/'
+                'url': 'http://www.andrewlook.com/'
             },
             'train',
         )
