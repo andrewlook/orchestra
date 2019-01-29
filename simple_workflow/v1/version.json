@@ -11,7 +11,6 @@
                 "path": "simple_workflow.v1.crawl.crawl_page"
             }
         },
-
         {
             "slug": "rate",
             "name": "Image Rating",

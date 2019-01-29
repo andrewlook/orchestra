@@ -956,7 +956,7 @@ def submit_task(task_id, task_data, iteration_status, worker):
     elif task.status == Task.Status.COMPLETE:
         create_subsequent_tasks(task.project)
 
-    notify_status_change(task, previous_status)
+    # notify_status_change(task, previous_status)
     return task
 
 
